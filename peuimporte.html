@@ -1,4 +1,5 @@
 <meta charset="utf-8">
+<title>Les recettes et les courses du chateau</title>
 
 <body>
 <script>
@@ -204,7 +205,8 @@ console.log('liste complète', ingrédients_de_la_semaine)
 console.log(ingrédients_de_la_semaine.join('\n'))
 
     
-document.body.innerHTML = `<ul>${ingrédients_de_la_semaine.map(i => `<li>${i}</li>`)}</ul>`
+document.body.innerHTML = `<h1>Les recettes et les courses du chateau</h1>
+<ul>${ingrédients_de_la_semaine.map(i => `<li>${i}</li>`).join('')}</ul>`
 
 </script>
 </body>
