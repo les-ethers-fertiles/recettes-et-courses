@@ -201,5 +201,7 @@ console.log('liste complète', ingrédients_de_la_semaine)
 
 console.log(ingrédients_de_la_semaine.join('\n'))
 
+    
+document.body.innerHTML = `<ul>${ingrédients_de_la_semaine.map(i => `<li>${i}</li>`)}</ul>`
 
 </script>
