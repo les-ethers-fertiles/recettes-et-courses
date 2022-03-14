@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <title>Les recettes et les courses du chateau</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <body>
 <script>
@@ -340,8 +341,194 @@ const recette_picard = {
         "picards"
     ]
 }
+      
+const recette_risotto_asperge = {
+    nom: "Risotto asperge",
+    ingrédients: [
+        "riz risotto (2 paquets)",
+        "asperges (3ou4 bottes)",
+        "creme fraiche",
+        "parmesan",
+        "oignon (1)",
+        "bouillon cube (2)"
+    ]
+}
+
+const recette_bobun = {
+    nom: "bobun",
+    ingrédients: [
+        "nouilles de riz",
+        "carottes",
+        "cacahuètes",
+        "feuilles de menthe",
+        "nems végé",
+        "nems poulet",
+        "nems crevettes",
+        "sauce nuoc mam",
+        "champignons ou pousses de soja ou edamame"
+
+    ]
+}
+
+const recette_quiches_legumes = {
+    nom: "quiche légumes",
+    ingrédients: [
+        "pates brisees (x3)",
+        "oeufs",
+        "creme fraiche",
+        "fromage rapé",
+        "moutarde",
+        "champignons",
+        "poireaux",
+        "feta",
+        "oignons",
+        "echalottes"
+    
+
+    ]
+}
+
+const recette_tagliatelle_végé_épinards_tofu_champignons = {
+    nom: "Tagliatelle végé",
+    ingrédients: [
+        "tagliatelles (x3)",
+        "tofu fumé",
+        "creme fraiche",
+        "champignons",
+        "fromage rapé",
+        "épinards",
+        "oignons",
+        "echalottes"
+    ]
+}
+
+const recette_dhal_lentilles_corail = {
+    nom: "Dhal lentilles corail",
+    ingrédients: [
+        "lentilles corail",
+        "lait coco",
+        "oignons"
+    ]
+}
+
+const recette_couscous_végé = {
+    nom: "Couscous végé",
+    ingrédients: [
+        "semoule",
+        "carottes",
+        "pois chiche",
+        "raisins secs",
+        "coriandre",
+        "oignons",
+        "navets"
+    ]
+}
+
+const recette_chorba_marocaine_8pers = {
+    nom: "Chorba à la Marocaine",
+    ingrédients: [
+        "agneau (500g)",
+        "navets (8)",
+        "celeri branche (6)",
+        "tomates (6)",
+        "carottes (8)",
+        "pomme de terre (4)",
+        "poireaux (2)",
+        "concentré de tomates (2càs)",
+        "persil (1bouquet)",
+        "coriandre (1bouquet)",
+        "oignons (2)",
+        "vermicelle (2poignées)",
+        "huile d'olive (2càs)",
+        "poivre (1càc)",
+        "sel (2càc)",
+        "curcuma (2càc)"
+    ]
+}
+
+const liste_petit_déjeuner = {
+    nom: "Petit déjeuner",
+    ingrédients: [
+        "brioches",
+        "flocons d'avoine",
+        "pate à tartiner",
+        "beurre de cacahuète",
+        "beurre doux",
+        "beurre demi sel",
+        "biscottes",
+        "fruits secs",
+        "lait d'avoine",
+        "lait de vache",
+        "lait d'amande",
+        "creme d'amande"
+    ]
+}
+
+const gouter_enfants = {
+    nom: "Goûter enfants",
+    ingrédients: [
+        "gateaux",
+        "bananes",
+        "clémentines",
+        "fromage blanc"
+    ]
+}
+
+const liste_fruits_semaine = {
+    nom: "liste fruits semaine",
+    ingrédients: [
+        "bananes",
+        "citrons",
+        "dattes",
+        "avocats",
+        "kiwi",
+        "mandarines",
+        "pommes",
+        "oranges"
+    ]
+}
+
+const produits_d_hygiene_corporelle = {
+    nom: "Produits d'hygiène corporelle",
+    ingrédients: [
+        "savons adultes",
+        "dentifrice",
+        "shampoing",
+        "brosse à dents",
+        "papier toilette"
+    ]
+}
+
+const produits_d_hygiene_enfants = {
+    nom: "Produits d'hygiène enfants",
+    ingrédients: [
+        "savons douche enfants",
+        "couches",
+        "liquide utilisé pour les changes",
+    ]
+}
+
+const produits_d_entretien_maison = {
+    nom: "Produits d'entretien maison",
+    ingrédients: [
+        "poches poubelle 50L",
+        "poches poubelle 20L pour poubelle couches",
+        "poches poubelle 10L pour poubelle salle de bain",
+        "produit vaisselle",
+        "eponges",
+        "pastilles lave vaisselle",
+        "vinaigre blanc citron",
+        "savon noir pour le sol",
+        "lessive",
+        "cristaux sel pour lave-vaisselle",
+        "liquide contre le tartre que l'on met une fois de temps en temps dans le lave-vaisselle",
+        "produit nettoyage douche",
+        "produit nettoyage toilette"
+    ]
+}
 
 const recettes_de_la_semaine = [
+    // recettes de la semaine
     recette_carottes_rapées,
     recettes_purée_de_pomme_de_terre,
     recette_picard,
@@ -363,6 +550,13 @@ const recettes_de_la_semaine = [
     recette_pad_thai,
     recette_riz_gluant_et_poireaux
     
+    // trucs habituels hors recettes
+    liste_petit_déjeuner,
+    gouter_enfants,
+    liste_fruits_semaine,
+    produits_d_entretien_maison,
+    produits_d_hygiene_enfants,
+    produits_d_hygiene_corporelle
 ]
 
 
@@ -372,7 +566,7 @@ const recettes_de_la_semaine = [
 let ingrédients_de_la_semaine = []
 
 for(const recette of recettes_de_la_semaine){
-    console.group()
+    console.group(recette.nom)
 
     console.log(recette)
     const ingrédients = recette.ingrédients;
@@ -393,7 +587,23 @@ console.log(ingrédients_de_la_semaine.join('\n'))
 
     
 document.body.innerHTML = `<h1>Les recettes et les courses du chateau</h1>
-<ul>${ingrédients_de_la_semaine.map(i => `<li>${i}</li>`).join('')}</ul>`
+<ul>${ingrédients_de_la_semaine.map(i => `<li><label><input type="checkbox"><span>${i}</span></label></li>`).join('')}</ul>`
 
 </script>
 </body>
+
+<style>
+    ul{
+      list-style: '🍴';
+    }
+    
+    label{
+      display: block;
+      margin: 0.3rem;
+    }
+    
+    input:checked + span{
+      text-decoration: line-through;
+    }
+    
+</style>
